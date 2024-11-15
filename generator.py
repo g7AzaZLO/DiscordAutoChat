@@ -19,7 +19,7 @@ def main():
     try:
         text = generatetext()
         print(f"[X] Сгенерированный текст: {text}")
-        translated = GoogleTranslator(source='auto', target='ru').translate(text)
+        translated = GoogleTranslator(source='auto', target='cn').translate(text)
         print(f"[X] Переведённый текст: {translated}")
         return translated
     except Exception as e:
